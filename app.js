@@ -7,10 +7,6 @@ var express = require("express"),
 		require("passport-local-mongoose"),
 	User = require("./models/user");
 
-mongoose.set('useNewUrlParser', true);
-mongoose.set('useFindAndModify', false);
-mongoose.set('useCreateIndex', true);
-mongoose.set('useUnifiedTopology', true);
 mongoose.connect("mongodb://localhost/auth_demo_app");
 
 var app = express();
