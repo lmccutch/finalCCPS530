@@ -26,26 +26,18 @@ passport.use(new LocalStrategy(User.authenticate()));
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
-//=====================
-// ROUTES
-//=====================
-
-// Showing home page
 app.get("/", function (req, res) {
 	res.render("home");
 });
 
-// Showing secret page
 app.get("/secret", isLoggedIn, function (req, res) {
 	res.render("secret");
 });
 
-// Showing register form
 app.get("/register", function (req, res) {
 	res.render("register");
 });
 
-// Handling user signup
 app.post("/register", function (req, res) {
 	var username = req.body.username
 	var password = req.body.password
@@ -63,19 +55,16 @@ app.post("/register", function (req, res) {
 	});
 });
 
-//Showing login form
 app.get("/login", function (req, res) {
 	res.render("login");
 });
 
-//Handling user login
 app.post("/login", passport.authenticate("local", {
 	successRedirect: "/secret",
 	failureRedirect: "/login"
 }), function (req, res) {
 });
 
-//Handling user logout
 app.get("/logout", function (req, res) {
 	req.logout();
 	res.redirect("/");
