@@ -15,11 +15,11 @@
     
     <div class="content" >
       <div style="text-align: center">
-                <h1> Register</h1>
- 
-                <form action="/register" method="POST">
+          <h1> Register</h1>
+          <form action="/register" method="POST">
           <label for="user">Email: </label>
-          <input type="username" name="username" id="user">
+          <input type="email" name="username" id="user">
+            <pattern=".+@globex\.com" size="30" required>
           <label for="pass">Password:</label>
           <input type="password" id="pass" name="password"
             minlength="8" required>
