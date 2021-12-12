@@ -1,32 +1,42 @@
 <style>
 	body {
 	  background-image: url('https://www.avantixlearning.ca/wp-content/uploads/2020/08/stop-words-splitting-at-the-end-of-a-line-1080x675.jpeg');
-	  background-size: cover;
 	  background-repeat: no-repeat;
-	  
+	  background-size: cover;
 	}
-	</style>
-	<style>
-		.content {
-		  max-width: 500px;
-		  margin: auto;
-		}
-		</style>
-		<body> 
-		
-		<div class="content" >
-			<div style="text-align: center">
-			<h1>Login</h1>
-			<form action="/login" method="POST">
-				<input type="text" name="username"
-					placeholder="email">
-				<input type="password" name="password"
-					placeholder="password">
-				<button>login</button>
-			</form>
-			<button><a href="/register">Haven't Registed? Sign up Here</a></button>
-			</div>
-		</div>
-		
-		</body>
-		
+.content {
+  max-width: 500px;
+  margin: auto;
+}
+</style>
+<body>
+
+<div class="content">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Login</title>
+</head>
+<body>
+  <h1>Login</h1>
+<div>
+<form action="/login" method="POST">
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+  </div>
+
+  <div>
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" required>
+  </div>
+  <button type="submit">Login</button>
+</form>
+
+<a href="/register" class="btn"role="button">Register</a>
+
+</body>
+</body>
+</html>
