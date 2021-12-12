@@ -1,6 +1,6 @@
 <style>
 	body {
-	  background-image: url('https://cdn.wallpapersafari.com/82/91/NYsQzc.jpg');
+	  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeaRkrZv1oyBsh7Xe6oMuDlOCqChTBx8wjXA&usqp=CAU');
 	  background-repeat: no-repeat;
 	  background-size: cover;
 	}
@@ -18,10 +18,11 @@
                 <h1> Register</h1>
  
                 <form action="/register" method="POST">
-                    <input type="text" name="username"
-                        placeholder="username">
-                    <input type="password" name="password"
-                        placeholder="password">
+					<label for="user">Email: </label>
+					<input type="username" name="username" id="user">
+					<label for="pass">Password:</label>
+					<input type="password" id="pass" name="password"
+						minlength="8" required>
                     <button>Submit</button>
                 </form>
                 <button><a href="/login">Already Registered? Login Here</a></button>
