@@ -1,45 +1,31 @@
-<style>
-	body {
-	  background-image: url('https://kesque.com/wp-content/uploads/2019/04/globe-background.png');
-	  background-repeat: no-repeat;
-	}
-.content {
-  max-width: 500px;
-  margin: auto;
+  <style>
+body {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeaRkrZv1oyBsh7Xe6oMuDlOCqChTBx8wjXA&usqp=CAU');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 </style>
-<body>
-<div class="content">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <title>Dictionary App</title>
-        
-    </head>
-    <body>
-        <div id="dictionary">
-            <div id="word-display">
-                <h1><%= word %></h1>
-                <h3><%= definition %></h3>
-                <img src="<%= imageurl %>">
-            </div>
+<style>
+    .content {
+      max-width: 500px;
+      margin: auto;
+    }
+    </style>
+    <body> 
     
+    <div class="content" >
+        <div style="text-align: center">
+        <h1>CCPS530 - Dictionary Website - Final Exam</h1>
+        <p>Author: Luke McCutcheon</p>
+        <p><a href="mailto:lmccutcheon@ryerson.ca">lmccutcheon@ryerson.ca</a></p>
         </div>
+        <p>This website will allow a user to enter a word and it will provide the definition of that word with a visual (if available). To use this site you will need to have register with a valid email and password of at least 8 characters!
+        </p>
+        <div style="text-align: center">
+        <button><a href="/register">Register</a></button>
+        <button><a href="/login">Login</a></button>
+        </div>
+    </div>
     
-        <form action="/homepage" method="POST">
-        <div id="word">
-            <label for="text">Word</label>
-            <input type="text" id="word" name="word" required>
-            <P>Please enter a word. The word will populate above, if the word is correct please enter the word again for the defintion</P>
-        </div>
-        <button type="submit">Define</button>
-        </form>
-      
-        
-      </body>
-      <button><a href="/login">Logout</a></button>
-      </html>
-</div>
-</body>
+    </body>
+    
